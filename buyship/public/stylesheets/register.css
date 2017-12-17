@@ -1,0 +1,112 @@
+html, body {margin: 0;padding: 0;height: 100%;}
+#content {
+    margin: auto;
+    width: 50%;height: 100%;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+#header {
+    width: 100%;height: 120px;
+}
+#logo {
+    width: 70%;height: 100%;
+    text-align: left;
+    font-size: 40px;
+    line-height: 115px;
+    float: left;
+}
+#logo img {
+    width: 200px;
+    height: 80px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#bodyInfo {
+    border: 1px solid #ccc;
+    width: 100%;height: 500px;
+}
+#bodyInfo #regInfo_left {
+    width: 70%;
+    min-width: 600px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    float: left;
+}
+#bodyInfo #regInfo_left #regInfo_seq {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+#bodyInfo #regInfo_left #regInfo_content {
+    width: 100%;
+    height: 439px;
+}
+#bodyInfo #regInfo_left #regInfo_content table {
+    width: 400px;
+    margin-left: 100px;
+    height: 100%;
+}
+#bodyInfo #regInfo_left #regInfo_content table th {
+    width: 130px;
+    height: 60px;
+    text-align: right;
+    font-family: 黑体;
+}
+#bodyInfo #regInfo_left #regInfo_content table td {
+    width: 300px;
+    height: 60px;
+}
+#bodyInfo #regInfo_left #regInfo_content table td input {
+    width: 180px;
+    height: 24px;
+    font-size: 12px;
+    font-family: console;
+}
+#bodyInfo #regInfo_left #regInfo_content table tr#isAgreementModule th, #bodyInfo #regInfo_left #regInfo_content table tr#isAgreementModule td {
+    height: 20px;
+}
+#bodyInfo #regInfo_left #regInfo_content table td input#agreement {
+    width: 15px;
+    height: 15px;
+    vertical-align: text-bottom;
+}
+#bodyInfo #regInfo_left #regInfo_content table td #submitReg {
+    width: 80px;
+    height: 30px;
+    float: left;
+    font-size: 15px;
+    background-color: #cef1ff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 28px;
+    color: #8a8888;
+    cursor: default;
+}
+#bodyInfo #regInfo_left #regInfo_content table td #submitReg.canSubmit {
+    cursor: pointer;
+    color: #2d2d2d;
+}
+#bodyInfo #regInfo_right {
+    float: left;
+    width: calc(30% - 1px);
+    min-width: 280px;
+    height: 100%;
+    background-color: #cef1ff;
+    line-height: 480px;
+    text-align: center;
+}
+#footer {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #9e9e9e;
+}
+#footer div {
+    margin-bottom: 7px;
+}

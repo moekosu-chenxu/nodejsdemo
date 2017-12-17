@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/register.css' />
+</head>
+<body>
+<div id="content">
+    <div id="header">
+        <div id="logo">
+            <img src="/images/logo.png">会员注册
+        </div>
+    </div>
+    <div id="bodyInfo">
+        <div id="regInfo_left">
+            <div id="regInfo_seq">
+                填写信息 -> 验证信息 -> 注册成功
+            </div>
+            <div id="regInfo_content">
+                <form action="/reg/regSave" method="post">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th>会员名称：</th>
+                            <td><input id="username" name="username" type="text"/></td>
+                        </tr>
+                        <tr>
+                            <th>会员密码：</th>
+                            <td><input id="userpass" name="userpass" type="text"/></td>
+                        </tr>
+                        <tr>
+                            <th>会员密码：</th>
+                            <td><input id="userpass_2" type="text"/></td>
+                        </tr>
+                        <tr>
+                            <th>手机号：</th>
+                            <td><input id="phoneNum" type="text"/></td>
+                        </tr>
+                        <tr>
+                            <th>验证码：</th>
+                            <td><input id="checkNum" type="text"/></td>
+                        </tr>
+                        <tr id="isAgreementModule">
+                            <th></th>
+                            <td><input id="agreement" type="checkbox" />是否同意XX协议内容</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td><button type="submit" id="submitReg">提交注册</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div id="regInfo_right">
+            AD
+        </div>
+    </div>
+    <div id="footer">
+        <div>首页 | 关于我们 | 帮助中心 | 推广 | 合作加盟 | 诚信保障 | 联系我们</div>
+        <div>©2017 www.GitHub.com/moekosu-chen/</div>
+    </div>
+</div>
+
+<script src="/javascripts/jquery-1.7.1.js"></script>
+<script src="/javascripts/register_cotroller.js"></script>
+</body>
+</html>
