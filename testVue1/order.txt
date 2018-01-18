@@ -1,0 +1,8 @@
+#打包
+webpack --color --progress
+#然后把index.html和整个dist放到服务器就可以部署了
+
+#打包
+npm run build
+#启动
+npm run dev
