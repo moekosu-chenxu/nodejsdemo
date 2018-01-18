@@ -21,6 +21,11 @@ RemoteAjax.prototype.cConfig = {
 RemoteAjax.prototype.postTo = function (obj, http) {
 
     // TODO obj必要字段校验
+    if(!obj['url'] || !obj['type'])
+    {
+        console.log('请求错误：缺少必备参数(url或type)');
+        return;
+    }
 
     // TODO 处理传输参数
     if(obj.url)
@@ -59,11 +64,12 @@ RemoteAjax.prototype.postTo = function (obj, http) {
             // TODO 容易json解析报错
             var jsonData = data != null? JSON.parse(data.toString()) : '';
             if(jsonData){
-                console.log(jsonData);
+                console.log('调用成功，返回参数：' + jsonData);
             }
             else{
-                console.log('no data');
+                console.log('调用成功，无返回参数');
             }
+            console.log('开始调用success回调函数');
             if(obj.success && typeof obj.success == 'function')
             {
                 obj.success.call(this, jsonData);
@@ -71,7 +77,7 @@ RemoteAjax.prototype.postTo = function (obj, http) {
         });
         // 结束请求
         msgRes.on('end', function () {
-            console.log('end the request');
+            console.log('结束调用，开始调用complete回调函数：');
             if(obj.complete && typeof obj.complete == 'function')
             {
                 obj.complete.call(this);
@@ -80,7 +86,7 @@ RemoteAjax.prototype.postTo = function (obj, http) {
     });
     // 请求错误
     reqq.on('error', function (err) {
-        console.log(err);
+        console.log('调用失败：' + err);
         if(obj.error && typeof obj.error == 'function')
         {
             obj.error.call(this, err);

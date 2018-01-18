@@ -1,12 +1,13 @@
 var express = require('express');
 var http = require('http');
 var router = express.Router();
-var remote = require('../public/javascripts/remoteReq.js');
+var remoteAjax = require('../public/javascripts/remoteReq.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-    remote.postTo({
+    // ajax调用
+    remoteAjax.postTo({
         url : '10.12.3.213:28085/dccp-platform/oss.ajax',
         type : "POST",
         data : {
