@@ -1,3 +1,4 @@
 # nodejs demo
-1.测试发布在Linux
-2.测试与springboot集成在Nginx
+1.娴嬭瘯鍙戝竷鍦↙inux  
+2.娴嬭瘯涓巗pringboot闆嗘垚鍦∟ginx  
+3.idea娉ㄥ唽锛歨ttp://idea.lanyus.com/  
