@@ -23,13 +23,13 @@ import thx from './component/thx.vue'
 const router = new VueRouter({
   // mode: 'history',
   // base: _dirname,
-  router: [
+  routes: [
     {
       path: '/f1',
       component: owner
     },
     {
-      path: 'f2',
+      path: '/f2',
       component: thx
     }
   ]

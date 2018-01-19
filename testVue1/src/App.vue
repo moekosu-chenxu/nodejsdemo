@@ -24,8 +24,8 @@
       <li><thx></thx></li>
     </ul>
     <ul>
-      <li><router-link to="/f1">test1</router-link></li>
-      <li><router-link to="/f2">test2</router-link></li>
+      <router-link to="/f1" tag="li">test1</router-link>
+      <router-link to="/f2" tag="li">test2</router-link>
     </ul>
     <ul>
       <li><router-view></router-view></li>
