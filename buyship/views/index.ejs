@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/index.css' />
-  </head>
-  <body>
-    <div id="content">
-      <div id="titleInfo">
-        <h1><%= title %></h1>
-      </div>
-      <div id="loginInfo">
-        <h1><%= username %></h1>
-      </div>
-      <div id="bodyInfo"></div>
+
+<% include head.ejs %>
+
+
+<div id="modules">
+    <div class="module block">
+        <div class="module_tro">抽奖模块</div>
     </div>
-  </body>
-</html>
+    <div class="module block">
+        <div class="module_tro">商城模块</div>
+    </div>
+    <div class="module block">
+        <div class="module_tro">抽奖模块</div>
+    </div>
+</div>
+
+
+<% include footer.ejs %>

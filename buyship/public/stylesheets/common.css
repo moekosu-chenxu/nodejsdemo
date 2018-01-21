@@ -1,0 +1,20 @@
+html, body {margin: 0;padding: 0;height: 100%;}
+#content {width: 80%;margin: auto;}
+#modules {width: 100%;height: 650px;float: left;border:1px solid #ccc;padding: 50px;}
+#modules .module{
+	border: 1px solid #ccc;
+	width: 300px;
+	height: 150px;
+	text-align: center;
+	line-height: 140px;
+	float: left;
+	margin-right: 50px;
+	cursor: pointer;
+}
+#modules .module:hover{
+	background-color: #ececec;
+}
+#personMsg {width: 100%;height: 200px;float: left;padding: 0 50px;}
+#personMsg img{
+	margin-right: 5px;
+}
