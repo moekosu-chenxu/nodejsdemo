@@ -2,15 +2,23 @@
 <% include head.ejs %>
 
 
-<div id="modules">
-    <div class="module block">
-        <div class="module_tro">抽奖模块</div>
+<div id="modules" class="modules">
+    <!-- 测试模块 -->
+    <div class="module block" onclick="goPartPage('/reg')">
+        <div class="module_tro">注册</div>
     </div>
-    <div class="module block">
-        <div class="module_tro">商城模块</div>
-    </div>
-    <div class="module block">
-        <div class="module_tro">抽奖模块</div>
+    <!-- ejs遍历参数数组 -->
+    <% modules.forEach(function(module){ %>
+        <div class="module block" onclick="goPartPage('<%=module.url%>')">
+            <div class="module_tro"><%=module.name%></div>
+        </div>
+    <% }) %>
+</div>
+<!-- 内容模块页(里面包含不同内容的iframe) -->
+<div id="pageContent" class="modules disp_none">
+    <div id="pageBack" class="pageBack">
+        <img src="/images/back2.png">
+        后退
     </div>
 </div>
 
