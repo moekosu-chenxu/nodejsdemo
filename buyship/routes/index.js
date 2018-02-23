@@ -19,6 +19,13 @@ router.get('/', function(req, res, next) {
         },
         error: function(err){
             console.log(err);
+            // 获取不到
+            var newJson = [{ createDate: 1516544322000,
+                mid: 1,
+                name: '测试模块',
+                status: '1',
+                url: '/test' }];
+            res.render('index', { title: 'Express', modules: newJson });
         },
         complete: function(){
 

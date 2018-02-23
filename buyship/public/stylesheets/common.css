@@ -1,6 +1,9 @@
 html, body {margin: 0;padding: 0;height: 100%;background-color: #efeeee;}
-#content {width: 80%;margin: auto;}
-.modules {width: 100%;height: 650px;float: left;border:1px solid #ccc;border-top: 0;padding: 50px;background-color: #f9f9f9;}
+#content {width: 80%;height: 100%;margin: auto;}
+.modules {
+	width: 79%;height: 90%;float: left;
+	border:1px solid #ccc;margin-top: 2%;
+	box-sizing: border-box;padding: 50px;background-color: #f9f9f9;}
 .modules .module{
 	border: 1px solid #ccc;
 	width: 300px;
@@ -14,9 +17,16 @@ html, body {margin: 0;padding: 0;height: 100%;background-color: #efeeee;}
 .modules .module:hover{
 	background-color: #ececec;
 }
-#personMsg {width: 100%;height: 200px;float: left;padding: 0 50px;}
+#personMsg {
+	width: 20%;height: 90%;float: left;
+	box-sizing: border-box;padding: 50px;
+	border: 1px solid #ccc;border-right: 0;
+	margin-top: 2%;background-color: #f9f9f9;}
 #personMsg img{
 	margin-right: 5px;
+}
+#personMsg p{
+	text-align: center;
 }
 .pageBack {
 	position: absolute;
