@@ -6,12 +6,11 @@ html, body {margin: 0;padding: 0;height: 100%;background-color: #efeeee;}
 	box-sizing: border-box;padding: 50px;background-color: #f9f9f9;}
 .modules .module{
 	border: 1px solid #ccc;
-	width: 300px;
-	height: 150px;
+	width: 90%;
+	height: 80px;
 	text-align: center;
-	line-height: 140px;
-	float: left;
-	margin: 0 50px 50px 0;
+	line-height: 80px;
+	margin: 0 auto 50px;
 	cursor: pointer;
 }
 .modules .module:hover{
