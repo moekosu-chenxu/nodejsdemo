@@ -3,13 +3,9 @@
 
 
 <div id="modules" class="modules">
-    <!-- 测试模块 -->
-    <div class="module block" onclick="goPartPage('/reg')">
-        <div class="module_tro">注册</div>
-    </div>
     <!-- ejs遍历参数数组 -->
     <% modules.forEach(function(module){ %>
-        <div class="module block" onclick="goPartPage('<%=module.url%>')">
+        <div class="module block" onclick="goPartPage(this, '<%=module.url%>')">
             <div class="module_tro"><%=module.name%></div>
         </div>
     <% }) %>

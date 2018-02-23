@@ -6,7 +6,32 @@
  * 跳转页面(模块内局部刷新显示)
  * @param url
  */
-function goPartPage(url)
+function goPartPage(o, url)
+{
+	//var _this = $(o);
+	//// 添加动画class
+	//_this.addClass('openMove');
+	//// 添加动画结束事件
+	//_this.off('animationend').on('animationend', function(e){
+		openNewFrame(url);
+		// 移除动画class
+	//	_this.removeClass('openMove');
+	//});
+}
+
+/**
+ * 跳转新页面
+ * @param url
+ */
+function goNewPage(url)
+{
+	window.location.href = url;
+}
+
+/**
+ * 打开新iframe
+ */
+function openNewFrame(url)
 {
 	// 以当前URL新建iframe
 	var iframe = $("<iframe>");
@@ -21,13 +46,4 @@ function goPartPage(url)
 		$("#pageContent").hide();
 		$("#modules").show();
 	});
-}
-
-/**
- * 跳转新页面
- * @param url
- */
-function goNewPage(url)
-{
-	window.location.href = url;
 }

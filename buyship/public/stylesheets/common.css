@@ -27,8 +27,12 @@ html, body {margin: 0;padding: 0;height: 100%;background-color: #efeeee;}
 #personMsg p{
 	text-align: center;
 }
+#personMsg #personLogo{
+	width: 100px;
+	height: 100px;
+}
 .pageBack {
-	position: absolute;
+	position: relative;left: 5%;
 	width: 70px;
 	height: 30px;
 	cursor: pointer;
@@ -40,3 +44,12 @@ html, body {margin: 0;padding: 0;height: 100%;background-color: #efeeee;}
 }
 
 .disp_none {display: none;}
+
+@keyframes open {
+	0% {width: 90%; height: 80px;}
+	100% {width: 100%; height: 100%;}
+}
+.openMove {
+	animation: open 500ms;
+	width: 100% !important; height: 100% !important;
+}
