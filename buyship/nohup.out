@@ -1,0 +1,873 @@
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m43.511 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m2.448 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m1.148 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.207 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.819 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.201 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m2.431 ms - 1016[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m14.622 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.352 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.194 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.449 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.447 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.433 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m22.900 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.743 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.821 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.611 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.917 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.707 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m19.975 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.301 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.241 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.612 ms - -[0m
+[0mGET /images/person.png [36m304 [0m2.657 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m1.908 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m14.306 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.504 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.469 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.377 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.809 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.245 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m17.917 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.610 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.213 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.454 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.200 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.183 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m24.743 ms - -[0m
+[0mGET /images/person.png [36m304 [0m4.214 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m4.297 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m1.762 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m2.224 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m1.682 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m14.412 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.322 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.178 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.179 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.273 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.196 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m21.835 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.778 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.716 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.753 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.239 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m1.342 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m12.051 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.566 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.179 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.220 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.179 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.527 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m12.986 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.303 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.212 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m1.990 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m1.741 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.275 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m12.138 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.291 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.194 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.197 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.184 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.176 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m15.270 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.268 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.206 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.207 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.650 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.673 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m255.404 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m0.477 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m0.294 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.211 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.459 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.216 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.267 ms - 1016[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m56.894 ms - 1374[0m
+[0mGET /stylesheets/common.css [32m200 [0m3.910 ms - 783[0m
+[0mGET /javascripts/func.js [32m200 [0m2.478 ms - 727[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m3.477 ms - 248235[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m14.008 ms - 1374[0m
+[0mGET /stylesheets/common.css [32m200 [0m0.567 ms - 783[0m
+[0mGET /javascripts/func.js [32m200 [0m3.983 ms - 727[0m
+[0mGET /images/back2.png [32m200 [0m3.122 ms - 1024[0m
+[0mGET /images/person.png [32m200 [0m3.664 ms - 1005[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m0.575 ms - 248235[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m17.941 ms - 1374[0m
+[0mGET /stylesheets/common.css [32m200 [0m0.669 ms - 783[0m
+[0mGET /javascripts/func.js [32m200 [0m1.035 ms - 727[0m
+[0mGET /images/back2.png [32m200 [0m0.857 ms - 1024[0m
+[0mGET /images/person.png [32m200 [0m0.677 ms - 1005[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m17.848 ms - 1374[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m0.831 ms - 248235[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m14.431 ms - 1374[0m
+[0mGET /stylesheets/common.css [32m200 [0m0.958 ms - 783[0m
+[0mGET /javascripts/func.js [32m200 [0m1.002 ms - 727[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m1.587 ms - 248235[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m51.587 ms - 1374[0m
+[0mGET /stylesheets/common.css [32m200 [0m6.684 ms - 783[0m
+[0mGET /images/back2.png [32m200 [0m7.616 ms - 1024[0m
+[0mGET /javascripts/func.js [32m200 [0m0.552 ms - 727[0m
+[0mGET /images/person.png [32m200 [0m0.336 ms - 1005[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m0.589 ms - 248235[0m
+[0mGET /favicon.ico [33m404 [0m2.385 ms - 1016[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m15.869 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m1.123 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m1.227 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.249 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.647 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.755 ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m11.561 ms - 1374[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m13.571 ms - 1374[0m
+[0mGET /stylesheets/common.css [32m200 [0m0.810 ms - 783[0m
+[0mGET /javascripts/func.js [32m200 [0m0.928 ms - 727[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m2.089 ms - 248235[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [36m304 [0m42.405 ms - -[0m
+[0mGET /stylesheets/common.css [36m304 [0m3.280 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m3.242 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.211 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m0.747 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.429 ms - -[0m
+[0mGET /reg [32m200 [0m2.584 ms - 2501[0m
+[0mGET /images/logo.png [33m404 [0m3.706 ms - 1016[0m
+[0mGET /stylesheets/register.css [32m200 [0m6.323 ms - 2480[0m
+[0mGET /javascripts/register_cotroller.js [32m200 [0m3.035 ms - 335[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.258 ms - -[0m
+[0mGET /lottery/prize [33m404 [0m1.302 ms - 1016[0m
+[0mGET /lottery/person [33m404 [0m1.123 ms - 1016[0m
+[0mGET /buyship [33m404 [0m1.177 ms - 1016[0m
+[0mHEAD /scripts/setup.php [33m404 [0m1.004 ms - 1016[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m56.647 ms - 1374[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m88.230 ms - 1374[0m
+[0mGET /hndUnblock.cgi [33m404 [0m0.890 ms - 1016[0m
+[0mGET /tmUnblock.cgi [33m404 [0m1.013 ms - 1016[0m
+[0mGET /moo [33m404 [0m0.889 ms - 1016[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m18.947 ms - 1374[0m
+[0mPOST /getcfg.php [33m404 [0m54.537 ms - 1016[0m
+[0mPOST /getcfg.php [33m404 [0m2.583 ms - 1016[0m
+[0mPOST http://check.best-proxies.ru/azenv.php?auth=151934448057&a=PSCN&i=2018460978&p=80 [33m404 [0m0.988 ms - 1016[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m58.408 ms - 1374[0m
+[0mHEAD /scripts/setup.php [33m404 [0m1.261 ms - 1016[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m189.161 ms - 1374[0m
+[0mGET /images/back2.png [32m200 [0m0.980 ms - 1024[0m
+[0mGET /stylesheets/common.css [32m200 [0m0.998 ms - 783[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m0.951 ms - 248235[0m
+[0mGET /javascripts/func.js [32m200 [0m0.596 ms - 727[0m
+[0mGET /images/person.png [32m200 [0m0.317 ms - 1005[0m
+[0mGET /javascripts/func.js?_t=1519364108154 [32m200 [0m0.547 ms - 727[0m
+[0mGET /favicon.ico [33m404 [0m2.057 ms - 1016[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m12.531 ms - 1374[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m15.845 ms - 1374[0m
+[0mGET /stylesheets/common.css [32m200 [0m1.896 ms - 783[0m
+[0mGET /javascripts/func.js [32m200 [0m1.762 ms - 727[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m1.793 ms - 248235[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m15.705 ms - 1374[0m
+[0mGET /stylesheets/common.css [32m200 [0m0.603 ms - 783[0m
+[0mGET /images/back2.png [32m200 [0m0.775 ms - 1024[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m1.014 ms - 248235[0m
+[0mGET /javascripts/func.js [32m200 [0m0.930 ms - 727[0m
+[0mGET /images/person.png [32m200 [0m2.570 ms - 1005[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m11.573 ms - 1374[0m
+[0mGET /stylesheets/common.css [32m200 [0m0.498 ms - 783[0m
+[0mGET /javascripts/func.js [32m200 [0m2.231 ms - 727[0m
+[0mGET /images/back2.png [32m200 [0m2.138 ms - 1024[0m
+[0mGET /images/person.png [32m200 [0m1.389 ms - 1005[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m1.442 ms - 248235[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m23.417 ms - 1374[0m
+[0mGET /stylesheets/common.css [32m200 [0m1.800 ms - 783[0m
+[0mGET /javascripts/func.js [32m200 [0m1.257 ms - 727[0m
+[0mGET /javascripts/jquery-1.7.1.js [32m200 [0m0.921 ms - 248235[0m
+[0mGET / [0m- [0m- ms - -[0m
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+ajax request come back data
+调用成功，返回参数：[object Object],[object Object],[object Object]
+开始调用success回调函数
+[ { createDate: 1516544322000,
+    mid: 1,
+    name: '抽奖模块（抽奖品模式）',
+    status: '1',
+    url: '/lottery/prize' },
+  { createDate: 1516544349000,
+    mid: 2,
+    name: '抽奖模块（单奖品抽中奖人模式）',
+    status: '1',
+    url: '/lottery/person' },
+  { createDate: 1516544381000,
+    mid: 3,
+    name: '商城模块',
+    status: '1',
+    url: '/buyship' } ]
+结束调用，开始调用complete回调函数：
+[0mGET / [32m200 [0m18.766 ms - 1647[0m
+[0mGET /stylesheets/common.css [36m304 [0m2.476 ms - -[0m
+[0mGET /images/back2.png [36m304 [0m3.321 ms - -[0m
+[0mGET /javascripts/jquery-1.7.1.js [36m304 [0m0.619 ms - -[0m
+[0mGET /images/person.png [36m304 [0m0.820 ms - -[0m
+[0mGET /javascripts/func.js [36m304 [0m1.142 ms - -[0m
+[0mGET /javascripts/func.js?_t=1519368673295 [32m200 [0m3.088 ms - 727[0m
+[0mGET /favicon.ico [33m404 [0m3.017 ms - 1016[0m

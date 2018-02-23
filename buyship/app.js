@@ -48,7 +48,7 @@ app.use(function(err, req, res, next) {
 });
 
 //
-app.listen(8100, function () {
+app.listen(80, function () {
 
 })
 
