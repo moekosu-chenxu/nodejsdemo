@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <% tools.forEach(function(tool){ %>
+            <span><a href="'<%=tool.url%>'"><%=tool.name%></a></span>
+        <% }) %>
+    </div>
+
+    <script src="/javascripts/jquery-1.7.1.js"></script>
+</body>
+</html>

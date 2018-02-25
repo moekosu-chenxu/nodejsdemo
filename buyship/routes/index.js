@@ -3,6 +3,8 @@ var http = require('http');
 var router = express.Router();
 var remoteAjax = require('../public/javascripts/remoteReq.js');
 
+var suitName = "蘑菇树❤";
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     // 获取module列表
@@ -15,7 +17,7 @@ router.get('/', function(req, res, next) {
         success: function(jsonData){
             console.log(jsonData);
             // 跳转页面
-            res.render('index', { title: 'Express', modules: jsonData });
+            res.render('index', { title: suitName, modules: jsonData });
         },
         error: function(err){
             console.log(err);
@@ -25,7 +27,7 @@ router.get('/', function(req, res, next) {
                 name: '测试模块',
                 status: '1',
                 url: '/test' }];
-            res.render('index', { title: 'Express', modules: newJson });
+            res.render('index', { title: suitName, modules: newJson });
         },
         complete: function(){
 
