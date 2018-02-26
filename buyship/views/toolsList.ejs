@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel='stylesheet' href='/stylesheets/toolsList.css' />
     <style>
 
     </style>
 </head>
 <body>
-    <div>
+    <div id="tools">
         <% tools.forEach(function(tool){ %>
-            <span><a href="'<%=tool.url%>'"><%=tool.name%></a></span>
+            <span class="toolItem" onclick="download(this, '<%=tool.url%>')"><%=tool.name%></span>
         <% }) %>
     </div>
 
     <script src="/javascripts/jquery-1.7.1.js"></script>
+    <script>
+        function download(obj, url) {
+            // $.ajax({
+            //     url: 'localhost:8012/moekosu/tools/download',
+            //     type: 'POST',
+            //     async: false,
+            //     data: {
+            //         "downloadUrl": url
+            //     },
+            //     success: function (resp) {
+            //         alert(resp);
+            //     },
+            //     error: function (err) {
+            //         console.log(err);
+            //         alert('error');
+            //     }
+            // });
+            location.href = location.host + '/moekosu/tools/download?downloadUrl=' + url;
+        }
+    </script>
 </body>
 </html>

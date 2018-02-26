@@ -21,10 +21,10 @@ router.get('/', function(req, res, next) {
 			console.log(err);
 			// 获取不到
 			var newJson = [{ createDate: 1516544322000,
-				mid: 1,
-				name: '测试模块',
+				id: 1,
+				name: '学习资料1',
 				status: '1',
-				url: '/test' }];
+				url: '/root/a.zip' }];
 			res.render('toolsList', { tools: newJson });
 		},
 		complete: function(){

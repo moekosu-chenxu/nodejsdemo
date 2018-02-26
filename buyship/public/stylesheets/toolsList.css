@@ -1,0 +1,9 @@
+#tools{
+    width: 70%;
+    margin: auto;
+}
+#tools .toolItem{
+    color: #354EFF;
+    text-decoration: underline;
+    cursor: pointer;
+}

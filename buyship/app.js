@@ -9,6 +9,7 @@ var session = require('express-session');
 var index = require('./routes/index');
 var login = require('./routes/login');
 var reg = require('./routes/register');
+var toolsList = require('./routes/toolsList');
 
 var app = express();
 
