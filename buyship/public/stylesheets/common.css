@@ -33,11 +33,9 @@ html, body {margin: 0;padding: 0;height: 100%;background-color: #efeeee;}
 }
 .pageBack {
 	position: relative;left: 5%;
-	width: 70px;
 	height: 30px;
 	cursor: pointer;
 	line-height: 30px;
-	border-bottom: 3px solid #585858;
 }
 .pageBack img {
 	vertical-align: text-bottom;
