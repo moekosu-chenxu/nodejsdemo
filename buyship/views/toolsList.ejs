@@ -9,29 +9,35 @@
 <body>
     <div id="tools">
         <% tools.forEach(function(tool){ %>
-            <span class="toolItem" onclick="download(this, '<%=tool.url%>')"><%=tool.name%></span>
+            <span class="toolItem" onclick="pop(this, '<%=tool.url%>')"><%=tool.name%></span>
         <% }) %>
+    </div>
+
+    <div id="pass" class="disp_none">
+        <input type="password" id="password"/>
+        <button id="pass_submit">提交密保</button>
     </div>
 
     <script src="/javascripts/jquery-1.7.1.js"></script>
     <script>
-        function download(obj, url) {
-            // $.ajax({
-            //     url: 'localhost:8012/moekosu/tools/download',
-            //     type: 'POST',
-            //     async: false,
-            //     data: {
-            //         "downloadUrl": url
-            //     },
-            //     success: function (resp) {
-            //         alert(resp);
-            //     },
-            //     error: function (err) {
-            //         console.log(err);
-            //         alert('error');
-            //     }
-            // });
-            location.href = location.host + '/moekosu/tools/download?downloadUrl=' + url;
+        function pop(obj, url)
+        {
+            $("#pass").show();
+            $("#pass_submit").on('click', function () {
+                var pass = $("#password").val();
+                if(!"".equals(pass) && pass != null){
+                    download(obj, url, pass);
+                }
+                $("#pass").hide();
+                $("#pass_submit").off('click');
+            });
+        }
+
+        function download(obj, url, pass) {
+            var name = obj.text();
+            var qname = name.split("/");
+            name = qname[qname.length-1];
+            location.href = location.host + '/moekosu/tools/download?pass='+ pass +'&fileName='+ name +'&downloadUrl=' + url;
         }
     </script>
 </body>
