@@ -25,7 +25,7 @@
             $("#pass").show();
             $("#pass_submit").on('click', function () {
                 var pass = $("#password").val();
-                if(!"".equals(pass) && pass != null){
+                if(pass != "" && pass != null){
                     download(obj, url, pass);
                 }
                 $("#pass").hide();
@@ -34,10 +34,10 @@
         }
 
         function download(obj, url, pass) {
-            var name = obj.text();
+            var name = $(obj).text();
             var qname = name.split("/");
             name = qname[qname.length-1];
-            location.href = location.host + '/moekosu/tools/download?pass='+ pass +'&fileName='+ name +'&downloadUrl=' + url;
+            parent.location.href = '/moekosu/tools/download?pass='+ pass +'&fileName='+ name +'&downloadUrl=' + url;
         }
     </script>
 </body>

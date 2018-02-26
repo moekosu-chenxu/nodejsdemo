@@ -10,5 +10,13 @@
 }
 #pass{
     position: absolute;
-    width: 100px;height: 100px;
+    top: 100px;
+    left: 300px;
+    width: 300px;
+    height: 100px;
+    border: 10px solid #bdbdbd;
+    background-color: #ececec;
+    text-align: center;
+    line-height: 90px;
 }
+.disp_none {display: none;}
