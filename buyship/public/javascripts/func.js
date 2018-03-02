@@ -8,15 +8,10 @@
  */
 function goPartPage(o, url)
 {
-	//var _this = $(o);
-	//// 添加动画class
-	//_this.addClass('openMove');
-	//// 添加动画结束事件
-	//_this.off('animationend').on('animationend', function(e){
-		openNewFrame(url);
-		// 移除动画class
-	//	_this.removeClass('openMove');
-	//});
+	// 加载loading动画
+	load.startLoading();
+	// 切入iframe
+	openNewFrame(url);
 }
 
 /**

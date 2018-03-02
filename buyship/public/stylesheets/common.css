@@ -1,8 +1,8 @@
-html, body {margin: 0;padding: 0;height: 100%;background-color: #efeeee;}
+html, body {margin: 0;padding: 0;height: 100%;background-color: #efeeee;font-size: 16px;font-family: Consolas, 微软雅黑;}
 #content {width: 80%;height: 100%;margin: auto;}
 .modules {
-	width: 79%;height: 90%;float: left;
-	border:1px solid #ccc;margin-top: 2%;
+	width: 80%;height: 800px;float: left;
+	border:1px solid #ccc;margin: 50px 0;
 	box-sizing: border-box;padding: 50px;background-color: #f9f9f9;}
 .modules .module{
 	border: 1px solid #ccc;
@@ -17,10 +17,10 @@ html, body {margin: 0;padding: 0;height: 100%;background-color: #efeeee;}
 	background-color: #ececec;
 }
 #personMsg {
-	width: 20%;height: 90%;float: left;
+	width: 20%;height: 800px;float: left;
 	box-sizing: border-box;padding: 50px;
 	border: 1px solid #ccc;border-right: 0;
-	margin-top: 2%;background-color: #f9f9f9;}
+	margin: 50px 0;background-color: #f9f9f9;}
 #personMsg img{
 	margin-right: 5px;
 }
@@ -42,6 +42,50 @@ html, body {margin: 0;padding: 0;height: 100%;background-color: #efeeee;}
 }
 
 .disp_none {display: none;}
+.maskPage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 900px;
+	z-index: 99;
+	background-color: #ddd;
+	opacity: 0.4;
+	text-align: center;
+	line-height: 800px;
+}
+
+.maskElem{
+	z-index: 100;
+	position: absolute;
+	left: 50%;
+	top: 450px;
+}
+#loadingImg{
+
+}
+.popMsg{
+	left: calc(50% - 200px);
+	top: 375px;
+	width: 400px;
+	height: 150px;
+	background-color: #E0E0E0;
+	border: 3px solid #AAA;
+	text-align: center;
+	line-height: 150px;
+}
+#pass #close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+}
+#pass #password{
+	border: 2px solid #aaa;
+}
 
 @keyframes open {
 	0% {width: 90%; height: 80px;}

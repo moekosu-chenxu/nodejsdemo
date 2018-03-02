@@ -1,6 +1,26 @@
+<!-- 遮罩层 -->
+<div id="maskPage" class="maskPage disp_none">
+</div>
+<!--------------- 底层模块msg ---------------->
+<!-- 下载页面：输入密保密码提示框 -->
+<div id="pass" class="maskElem popMsg disp_none">
+    <span id="close">✖</span>
+    <input type="password" id="password"/>
+    <button id="pass_submit">提交密保</button>
+</div>
+<!--------------- 顶层msg ---------------->
+<!-- loading -->
+<div id="loadingImg" class="maskElem disp_none">
+    <img src="/images/loading.gif">
+</div>
+<!-- 弹出提示框 -->
+<div id="popMsg" class="maskElem popMsg disp_none">
+    <span></span>
+</div>
 
 </div>
 <script src="/javascripts/jquery-1.7.1.js" ></script>
+<script src="/javascripts/popMask.js" ></script>
 <script src="/javascripts/func.js" ></script>
 </body>
 </html>

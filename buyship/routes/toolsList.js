@@ -24,7 +24,11 @@ router.get('/', function(req, res, next) {
 				id: 1,
 				name: '学习资料1',
 				status: '1',
-				url: '/root/a.zip' }];
+				url: '/root/a.zip' },{ createDate: 1516544322000,
+                id: 1,
+                name: '学习资料2',
+                status: '1',
+                url: '/root/a.zip' }];
 			res.render('toolsList', { tools: newJson });
 		},
 		complete: function(){

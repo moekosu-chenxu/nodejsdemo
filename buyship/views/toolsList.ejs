@@ -13,31 +13,32 @@
         <% }) %>
     </div>
 
-    <div id="pass" class="disp_none">
-        <input type="password" id="password"/>
-        <button id="pass_submit">提交密保</button>
-    </div>
-
     <script src="/javascripts/jquery-1.7.1.js"></script>
+    <script src="/javascripts/popMask.js"></script>
     <script>
+        // 结束loading动画
+        load.endLoading();
+
+        // 弹出密保验证框
         function pop(obj, url)
         {
-            $("#pass").show();
-            $("#pass_submit").on('click', function () {
-                var pass = $("#password").val();
-                if(pass != "" && pass != null){
-                    download(obj, url, pass);
+            pass.showMsg(function (password) {
+                if(password != "" && password != null){
+                    download(obj, url, password);
+                    pass.closeMsg();
                 }
-                $("#pass").hide();
-                $("#pass_submit").off('click');
+                else{
+                    popMsg1.showMsg('请输入密保密码');
+                }
             });
         }
 
+        // 成功跳转下载链接
         function download(obj, url, pass) {
             var name = $(obj).text();
             var qname = name.split("/");
             name = qname[qname.length-1];
-            parent.location.href = '/moekosu/tools/download?pass='+ pass +'&fileName='+ name +'&downloadUrl=' + url;
+            parent.location.href = 'http://120.79.69.50:8012/moekosu/tools/download?pass='+ pass +'&fileName='+ name +'&downloadUrl=' + url;
         }
     </script>
 </body>
