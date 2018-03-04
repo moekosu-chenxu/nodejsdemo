@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href='/stylesheets/toolsList.css' />
+  <style>
+
+  </style>
+</head>
+<body>
+<div id="blog">
+  <% blogs.forEach(function(blog){ %>
+  <span class="blogItem" onclick="pop(this, '<%=blog.url%>')"><%=blog.name%></span>
+  <% }) %>
+</div>
+
+<script src="/javascripts/jquery-1.7.1.js"></script>
+<script src="/javascripts/popMask.js"></script>
+<script>
+  // 结束loading动画
+  load.endLoading();
+
+</script>
+</body>
+</html>

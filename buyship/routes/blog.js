@@ -11,31 +11,34 @@ router.get('/', function(req, res, next) {
 
 	// ajax调用
 	remoteAjax.postTo({
-		url : '10.12.3.213:28085/dccp-platform/oss.ajax',
+		url : 'localhost:8012/moekosu/blog/list',
 		type : "POST",
 		data : {
-			"version": "1.0",
-			"portalType": "WAP",
-			"portalId": "100",
-			"reqTime": "2016-04-08 18:39:00",
-			"transactionId": "20160408183900000001",
-			"sign": "ETSZD4361xdryq",
-			"funcCode": "getActivityDetail",
-			"activityId": "ACT20171221317691980"
+
 		},
-		success : function(resp) {
-			console.log('succ: '+ resp);
+		success : function(jsonData) {
+			console.log(jsonData);
+			// 跳转页面
+			res.render('blog/blog', { blogs: jsonData });
 		},
 		error : function(err) {
-			console.log('err: '+ err);
+			console.log(err);
+			// 获取不到
+			var newJson = [{ createDate: 1516544322000,
+				id: 1,
+				name: '学习资料1',
+				status: '1',
+				url: '/root/a.zip' },{ createDate: 1516544322000,
+				id: 1,
+				name: '学习资料2',
+				status: '1',
+				url: '/root/a.zip' }];
+			res.render('blog/blog', { blogs: newJson });
 		},
 		complete: function () {
-			console.log('comp');
+
 		}
 	}, http);
-
-	// 跳转页面
-	res.render('index', { title: 'Express', username: 'Chenxu' });
 });
 
 module.exports = router;
