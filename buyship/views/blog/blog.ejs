@@ -9,7 +9,7 @@
 <body>
 <div id="blog">
   <% blogs.forEach(function(blog){ %>
-  <span class="blogItem" onclick="pop(this, '<%=blog.url%>')"><%=blog.name%></span>
+  <span class="blogItem" onclick="openDetail(this, '<%=blog.url%>')"><%=blog.name%></span>
   <% }) %>
 </div>
 
@@ -18,6 +18,11 @@
 <script>
   // 结束loading动画
   load.endLoading();
+
+  function openDetail(obj)
+  {
+
+  }
 
 </script>
 </body>
