@@ -14,7 +14,6 @@ router.get('/', function(req, res, next) {
 		url : 'localhost:8012/moekosu/blog/list',
 		type : "POST",
 		data : {
-
 		},
 		success : function(jsonData) {
 			console.log(jsonData);
@@ -26,11 +25,15 @@ router.get('/', function(req, res, next) {
 			// 获取不到
 			var newJson = [{ createDate: 1516544322000,
 				id: 1,
-				name: '学习资料1',
+				title: '学习资料1',
+				content: 'test1',
+                groupName: '默认',
 				status: '1',
 				url: '/root/a.zip' },{ createDate: 1516544322000,
-				id: 1,
-				name: '学习资料2',
+				id: 2,
+                title: '学习资料2',
+                content: 'test2',
+                groupName: '默认',
 				status: '1',
 				url: '/root/a.zip' }];
 			res.render('blog/blog', { blogs: newJson });

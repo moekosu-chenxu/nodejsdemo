@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel='stylesheet' href='/stylesheets/toolsList.css' />
+  <link rel='stylesheet' href='/stylesheets/blog.css' />
   <style>
 
   </style>
 </head>
 <body>
-<div id="blog">
+<div id="blogTitle">
+  <div id="logo"><span>博客</span></div>
+  <div id="newEssay">
+    <div id="button">写文章✚</div>
+  </div>
+  <div id="chosenGroup">
+    <select>
+      <option>All</option>
+    </select>
+  </div>
+</div>
+<div id="blogList">
   <% blogs.forEach(function(blog){ %>
-  <span class="blogItem" onclick="openDetail(this, '<%=blog.url%>')"><%=blog.name%></span>
+    <div class="blogItem" onclick="openDetail(this, '<%=blog.id%>')">
+      <div class="blogTitle"><%=blog.title%></div>
+      <div class="extraMsg"><%=blog.createDate%> / <%=blog.groupName%></div>
+      <div class="contentAb"><%=blog.content%></div>
+    </div>
   <% }) %>
 </div>
 
@@ -19,7 +34,7 @@
   // 结束loading动画
   load.endLoading();
 
-  function openDetail(obj)
+  function openDetail(obj, essayId)
   {
 
   }

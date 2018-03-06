@@ -26,7 +26,7 @@ router.get('/', function(req, res, next) {
                 mid: 1,
                 name: '测试模块',
                 status: '1',
-                url: '/download' }];
+                url: '/blog' }];
             res.render('index', { title: suitName, modules: newJson });
         },
         complete: function(){
