@@ -11,14 +11,19 @@ router.get('/', function(req, res, next) {
 
 	// ajax调用
 	remoteAjax.postTo({
-		url : 'localhost:8012/moekosu/blog/list',
+		url : '120.79.69.50:8012/moekosu/blog/list',
 		type : "POST",
 		data : {
 		},
 		success : function(jsonData) {
 			console.log(jsonData);
 			// 跳转页面
-			res.render('blog/blog', { blogs: jsonData });
+			if(jsonData.isSuccess){
+				res.render('blog/blog', { blogs: jsonData.data });
+			}
+			else{
+				res.render('blog/blog', { blogs: [] });
+			}
 		},
 		error : function(err) {
 			console.log(err);
