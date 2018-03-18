@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 	// ajax调用
 	remoteAjax.postTo({
-		url : '120.79.69.50:8012/moekosu/blog/list',
+		url : 'localhost:8012/moekosu/blog/list',
 		type : "POST",
 		data : {
 		},

@@ -10,7 +10,10 @@ RemoteAjax.prototype.cConfig = {
     method: '', //POST GET
     host: '10.12.3.213',
     port: 80,
-    path: '/dccp-platform/oss.ajax'
+    path: '/dccp-platform/oss.ajax',
+    headers:{
+        "Content-Type": 'application/json'
+    }
 };
 
 /**
@@ -28,6 +31,7 @@ RemoteAjax.prototype.postTo = function (obj, http) {
     }
 
     // TODO 处理传输参数
+    var currData = "";
     if(obj.url)
     {
         var paramUrl = obj.url;
@@ -92,6 +96,8 @@ RemoteAjax.prototype.postTo = function (obj, http) {
             obj.error.call(this, err);
         }
     });
+    console.log('配置列表：' + JSON.stringify(this.cConfig));
+    console.log('请求参数列表：' + JSON.stringify(obj.data));
     reqq.write(JSON.stringify(obj.data), 'UTF-8');// 请求带参数
     reqq.end();// 必须写，结束请求
 }

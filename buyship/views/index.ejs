@@ -5,7 +5,7 @@
 <div id="modules" class="modules">
     <!-- ejs遍历参数数组 -->
     <% modules.forEach(function(module){ %>
-        <div class="module block" onclick="goPartPage(this, '<%=module.url%>')">
+        <div class="module block" onclick="goPartPage(this, '<%=module.url%>', '/')">
             <div class="module_tro"><%=module.name%></div>
         </div>
     <% }) %>

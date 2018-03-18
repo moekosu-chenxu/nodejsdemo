@@ -14,7 +14,7 @@
   </div>
   <div id="chosenGroup">
     <select id="groupList">
-      <option groupId="">All</option>
+      <option groupId="">全部</option>
     </select>
   </div>
 </div>
@@ -23,7 +23,7 @@
     <div class="blogItem" onclick="openDetail(this, '<%=blog.id%>')">
       <div class="blogTitle"><%=blog.title%></div>
       <div class="extraMsg"><%=blog.createDate%> / <%=blog.groupName%></div>
-      <div class="contentAb"><%=blog.content%></div>
+      <div class="contentAb"><%-blog.content%></div>
     </div>
   <% }) %>
 </div>

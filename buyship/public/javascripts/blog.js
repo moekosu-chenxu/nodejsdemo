@@ -1,7 +1,17 @@
 $(function(){
 	// 获取文章分组列表
 	getGroup();
+	//
+	initListener();
 });
+
+function initListener()
+{
+	//
+	$("#newEssay #button").on('click', function(){
+		parent.goPartPage(null, "/blogNew", "/blog");
+	});
+}
 
 /**
  * 获取文章分组列表
@@ -9,14 +19,14 @@ $(function(){
 function getGroup()
 {
 	$.ajax({
-		url: 'localhost:8012/moekosu/blog/groupList',
+		url: '/service/blog/groupList',
 		async: false,
 		type: 'POST',
+		dataType: 'json',
 		data: {
 
 		},
-		success: function(jsonData){
-			var resp = eval ("(" + jsonData + ")");
+		success: function(resp){
 			if(resp.isSuccess){
 				set2Group(resp.data);
 			}

@@ -9,7 +9,7 @@ var suitName = "蘑菇树❤";
 router.get('/', function(req, res, next) {
     // 获取module列表
     remoteAjax.postTo({
-        url: '120.79.69.50:8012/moekosu/modules/list',
+        url: 'localhost:8012 /moekosu/modules/list',
         type: 'POST',
         data: {
 

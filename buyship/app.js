@@ -7,10 +7,12 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var index = require('./routes/index');
+var service = require('./routes/service');
 var login = require('./routes/login');
 var reg = require('./routes/register');
 var toolsList = require('./routes/toolsList');
 var blog = require('./routes/blog');
+var blogNew = require('./routes/blogNew');
 
 var app = express();
 
@@ -28,10 +30,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use(session({secret: 'chenxu'}));
 
 app.use('/', index);
+app.use('/service', service);
 app.use('/login', login);
 app.use('/reg', reg);
 app.use('/download', toolsList);
 app.use('/blog', blog);
+app.use('/blogNew', blogNew);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
