@@ -1,13 +1,16 @@
 $(function(){
 	// 获取文章分组列表
 	getGroup();
-	//
+	// 定义监听器
 	initListener();
 });
 
+/**
+ * 监听
+ */
 function initListener()
 {
-	//
+	// 新建文章
 	$("#newEssay #button").on('click', function(){
 		parent.goPartPage(null, "/blogNew", "/blog");
 	});
@@ -69,5 +72,5 @@ function set2Group(data)
  */
 function openDetail(obj, essayId)
 {
-
+    parent.goPartPage(null, "/blogDetail?id="+essayId, "/blog");
 }

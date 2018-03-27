@@ -13,6 +13,7 @@ var reg = require('./routes/register');
 var toolsList = require('./routes/toolsList');
 var blog = require('./routes/blog');
 var blogNew = require('./routes/blogNew');
+var blogDetail = require('./routes/blogDetail');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use(cookieParser('Chenxu'));
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use(session({secret: 'chenxu'}));
 
+// 跳转定向
 app.use('/', index);
 app.use('/service', service);
 app.use('/login', login);
@@ -36,15 +38,16 @@ app.use('/reg', reg);
 app.use('/download', toolsList);
 app.use('/blog', blog);
 app.use('/blogNew', blogNew);
+app.use('/blogDetail', blogDetail);
 
-// catch 404 and forward to error handler
+// 处理404或定向错误
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
-// error handler
+// 处理error
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
@@ -55,7 +58,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-//
+// 监听端口
 app.listen(80, function () {
 
 })
