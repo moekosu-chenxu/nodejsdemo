@@ -26,22 +26,20 @@ router.get('/', function(req, res, next) {
             console.log('调用ajax成功，返回数据：' + jsonData);
             // 跳转页面
             if(jsonData.isSuccess){
-                res.render(forwardUrl, { blog: jsonData.data });
-            }
-            else{
-                res.render(forwardUrl, { blog: [] });
+                if(jsonData.data.length > 0)
+                res.render(forwardUrl, { blog: jsonData.data[0] });
             }
         },
         error : function(err) {
             console.log('调用ajax失败，错误信息：' + err);
             // 获取不到
-            var newJson = [{ createDate: 1516544322000,
+            var newJson = { createDate: 1516544322000,
                 id: 1,
                 title: '学习资料1',
                 content: 'test1',
                 groupName: '默认',
                 status: '1',
-                url: '/root/a.zip' }];
+                url: '/root/a.zip' };
             res.render(forwardUrl, { blog: newJson });
         },
         complete: function () {
