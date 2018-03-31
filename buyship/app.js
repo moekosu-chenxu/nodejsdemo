@@ -14,6 +14,7 @@ var toolsList = require('./routes/toolsList');
 var blog = require('./routes/blog');
 var blogNew = require('./routes/blogNew');
 var blogDetail = require('./routes/blogDetail');
+var zktest = require('./routes/service/zktest');
 
 var app = express();
 
@@ -39,6 +40,7 @@ app.use('/download', toolsList);
 app.use('/blog', blog);
 app.use('/blogNew', blogNew);
 app.use('/blogDetail', blogDetail);
+app.use('/service/zktest', zktest);
 
 // 处理404或定向错误
 app.use(function(req, res, next) {

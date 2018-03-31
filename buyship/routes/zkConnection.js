@@ -1,22 +1,20 @@
-var express = require('express');
 var zk = require('node-zookeeper-client');
-//var httpProxy = require('http-proxy'); //构造代理服务器
+var httpProxy = require('http-proxy'); //构造代理服务器
 
-var CONNECT_URL = '-:2181';
+var CONNECT_URL = '120.79.69.50:2181';
 var REGISTER_ROOT = '/dubbo';
 
 // 连接zk
 var zook = zk.createClient(CONNECT_URL);
 zook.connect();
-
 // 创建代理服务器
-//var proxy = httpProxy.createProxyServer();
+var proxy = httpProxy.createProxyServer();
 
 function zookConnection()
 {
 };
 
-zookConnection.prototype.getService = function (serviceName) {
+zookConnection.prototype.getService = function (serviceName, req, res) {
 
     var servicePath = REGISTER_ROOT +'/'+ serviceName;
     console.log('req dubbo service path: '+ servicePath);
@@ -57,15 +55,17 @@ zookConnection.prototype.getService = function (serviceName) {
                 console.log(err.stack);
                 return;
             }
+            if(!serviceAddress){
+                console.log('no serviceAddress');
+                return;
+            }
             //
-            // proxy.web(req,res,{
-            //     target:'http://'+serviceAddress//目标地址
-            // })
+            proxy.web(req, res, {
+                target:'http://'+serviceAddress//目标地址
+            })
         })
-
     })
+};
 
-}
-
-var zkConnect = new zookConnection();
-module.exports = zkConnect;
+var zkk = new zookConnection();
+module.exports = zkk;
