@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<link rel='stylesheet' href='/stylesheets/blog.css' />-->
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="userInfo">
+    <div id="userName">moekosu</div>
+    <div id="userId" style="display: none;">1</div>
+    <div class="titleButton" onclick="enterCar()">查看我的购物车</div>
+</div>
+<div id="goodsList">
+    <% goods.forEach(function(good){ %>
+    <div class="goodsCard">
+        <img src="'<%=good.pic_path%>'" />
+        <span><%=good.goodsName%></span>
+        <span><%=good.price%></span>
+        <div onclick="buy('<%=good.goodsId%>')">购买(秒杀)</div>
+    </div>
+    <% }) %>
+</div>
+
+<script src="/javascripts/jquery-1.7.1.js"></script>
+<script src="/javascripts/popMask.js"></script>
+<!--<script src="/javascripts/blog.js"></script>-->
+<script>
+    // 进入页面结束loading
+    load.endLoading();
+    /**
+     * 购买（秒杀）
+     * @param goodsId userId buyCount
+     */
+    function buy(goodsId)
+    {
+        // 点击购买，开始加载loading
+        load.startLoading();
+        var userId = $("#userId").val();
+        // TODO buy ajax
+    }
+    /**
+     * 进入我的购物车
+     */
+    function enterCar()
+    {
+        var userId = $("#userId").val();
+        parent.goPartPage(null, "/car/car?id="+userId, "/car/goods");
+    }
+</script>
+</body>
+</html>

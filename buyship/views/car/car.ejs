@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<link rel='stylesheet' href='/stylesheets/blog.css' />-->
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="userInfo">
+    <div id="userName">moekosu</div>
+</div>
+<div id="carList">
+    <% cars.forEach(function(car){ %>
+    <div class="carItem">
+        <img class="goodsPic" src="'<%=car.pic_path%>'" />
+        <div class="goodsName"><%=car.goodsName%></div>
+        <div class="goodsDesc"><%=car.goodsDesc%></div>
+        <div class="goodsPrice"><%=car.price%></div>
+        <div class="goodsBuyCount"><%=car.buyCount%></div>
+    </div>
+    <% }) %>
+</div>
+
+<script src="/javascripts/jquery-1.7.1.js"></script>
+<script src="/javascripts/popMask.js"></script>
+<!--<script src="/javascripts/blog.js"></script>-->
+</body>
+</html>

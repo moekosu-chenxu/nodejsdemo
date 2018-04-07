@@ -1,3 +1,4 @@
+// 必要组件
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -5,7 +6,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-
+// 定向处理路由
 var index = require('./routes/index');
 var service = require('./routes/service');
 var login = require('./routes/login');
@@ -15,6 +16,8 @@ var blog = require('./routes/blog');
 var blogNew = require('./routes/blogNew');
 var blogDetail = require('./routes/blogDetail');
 var zktest = require('./routes/service/zktest');
+var goods = require('./routes/car/goods');
+var car = require('./routes/car/car');
 
 var app = express();
 
@@ -41,6 +44,8 @@ app.use('/blog', blog);
 app.use('/blogNew', blogNew);
 app.use('/blogDetail', blogDetail);
 app.use('/service/zktest', zktest);
+app.use('/car', goods);
+app.use('/car/list', car);
 
 // 处理404或定向错误
 app.use(function(req, res, next) {
