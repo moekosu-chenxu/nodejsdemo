@@ -1,77 +1,76 @@
 <template>
   <!-- template下只能有一个div -->
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-    <ul>
-      <li><owner></owner></li>
-    </ul>
-    <ul>
-      <li><thx></thx></li>
-    </ul>
-    <ul>
-      <router-link to="/f1" tag="li">test1</router-link>
-      <router-link to="/f2" tag="li">test2</router-link>
-    </ul>
-    <ul>
-      <li><router-view></router-view></li>
-    </ul>
+    <div id="header">
+      <!-- v-for="代称 in 列表" 列表可以是list[]，可以是{}对象，可以是10整数 -->
+      <!-- :to 是v-bind:to的缩写 绑定参数 -->
+      <router-link v-for="h in header" :to="h.path" tag="div" class="item">{{h.name}}</router-link>
+    </div>
+    <div>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import owner from './component/owner.vue'
-import thx from './component/thx.vue'
 export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      header: [{
+        name: '首页',
+        path: '/index',
+        items: []
+      },{
+        name: '表单',
+        path: '/form',
+        items: []
+      },{
+        name: '3',
+        path: '/',
+        items: []
+      },{
+        name: '4',
+        path: '/',
+        items: []
+      },{
+        name: '5',
+        path: '/',
+        items: []
+      }]
     }
-  },
-  components: { owner, thx }
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    margin: 0;padding: 0;
+    font-family: Consolas, 微软雅黑;
+    font-size: 16px;
+  }
+  #header{
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+  }
+  .item{
+    height: 80px;
+    width: 200px;
+    float: left;
+    line-height: 120px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #5d5959;
+  }
+  .item:hover{
+    background-color: #ccc;
+    color: #fff;
+  }
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>

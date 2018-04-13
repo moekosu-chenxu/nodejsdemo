@@ -1,3 +1,6 @@
+/**
+ * Vue入口
+ */
 import Vue from 'vue'
 import App from './App.vue'
 
@@ -10,8 +13,11 @@ Vue.config.debug = true;
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
+// 路由注册
+import index from './component/index.vue'
 import owner from './component/owner.vue'
 import thx from './component/thx.vue'
+import forms from './component/form/main.vue'
 
 /**
  * 页面使用<router-link to="/f1" replace tag="li">test1</router-link>来做路由导航
@@ -21,22 +27,33 @@ import thx from './component/thx.vue'
  * @active-class 被选中时会添加class
  */
 const router = new VueRouter({
-  // mode: 'history',
-  // base: _dirname,
-  routes: [
-    {
-      path: '/f1',
-      component: owner
-    },
-    {
-      path: '/f2',
-      component: thx
-    }
-  ]
+  routes: [{
+    path: '/',
+    component: index
+  },{
+    path: '/index',
+    component: index
+  },
+  {
+    path: '/owner',
+    component: owner
+  },
+  {
+    path: '/thx',
+    component: thx
+  },
+  {
+    path: '/form',
+    component: forms
+  }]
 });
 
+/**
+ * new Vue()初始化Vue实例
+ * PS: 如果el内容在实例化时有作用，会进入编译过程，如果无作用或没有el，则需要显示调用编译new Vue({}).$mount('#app')
+ */
 const app = new Vue({
-  el: '#app',
+  el: '#app,#index',
   router: router,
   render: h => h(App)
 });
