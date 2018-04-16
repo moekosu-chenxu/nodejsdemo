@@ -1,3 +1,8 @@
+/**
+ * backbone.js 实现mvvm的模式 订阅者发布者模式
+ * @param oid
+ * @returns {{callbacks: {}, on: on, publish: publish}}
+ */
 function dataBinder(oid)
 {
     //
@@ -15,6 +20,7 @@ function dataBinder(oid)
         }
     };
 
+    // 私有变量
     var data_attr = "data-bind-" + oid;
     var message = oid + ":change";
 
