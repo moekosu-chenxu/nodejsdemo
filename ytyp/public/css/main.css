@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*reset*/
+* {
+    box-sizing: border-box;
+}
+html,body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, th, td 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+html,body{min-height:100%;}
+ul, ol { list-style: none; }
+
+a{ text-decoration: none; }
+a:hover{ text-decoration: underline; }
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none;}
+button, input, select, textarea {
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr {
+    border: none;
+    height: 1px;
+}
+
+/*reset*/
+
+/*main*/
+.layout{
+	margin:auto;
+
+}
+.left{text-align:left;}
+.center{text-align:center;}
+.right{text-align:right;}
+.small{font-size:0.8rem;}
+.smaller{font-size:0.65rem;}
+.smallest{font-size:0.5rem;}
+.big{font-size:1.4rem;}
+.biger{font-size:1.7rem;}
+.bigest{font-size:2rem;}
+
+header{overflow:hidden;}
+header .logo{float:left; width:26%; padding:1% 2%;}
+header .user{float:left; width:66%; padding:1% 2%;}
+footer{padding:0.5rem;}
+
+.headnav{height:2.75rem; overflow:hidden; text-align:center; line-height:2.75rem;}
+.headnav-left{float:left; width:20%; margin-left:2%;}
+.headnav-right{float:right; width:20%; margin-right:2%;}
+
+.btn{margin:0 auto; overflow:hidden; width:100%; text-align:center;}
+.btn .btn1{width:96%; margin:auto 2%;}
+.btn .btn2{width:46%; float:left; margin:auto 2%; display:block;}
+.btn .btn3{width:29.33333%; float:left; margin:auto 2%;}
+.btn .btn1-1{width:50%; margin:auto;}
+/*main*/
+
+/*清除浮动*/
+.clearfix:after { 
+    content:"\200B"; 
+    display:block; 
+    height:0; 
+    clear:both; 
+} 
+.clearfix {*zoom:1;} 
+/*清除浮动*/
+
+/*placeholder文字颜色*/
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+    color: #999;
+	font-size:0.85rem;
+	text-align:left;
+	text-indent:1rem;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999;
+	font-size:0.85rem;
+	text-align:left;
+	text-indent:1rem;
+}
+input::-o-input-placeholder,
+textarea::-o-input-placeholder {
+    color: #999;
+	font-size:0.85rem;
+	text-align:left;
+	text-indent:1rem;
+}
+input::-moz-input-placeholder,
+textarea::-moz-input-placeholder {
+    color: #999;
+	font-size:0.85rem;
+	text-align:left;
+	text-indent:1rem;
+}
+

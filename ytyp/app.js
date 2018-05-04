@@ -1,5 +1,9 @@
 //app.js
 App({
+  globalData: {
+    userInfo: null,
+    reqPath: "http://gd.dccp.liuliangjia.cn/dccp-portal"
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -33,7 +37,49 @@ App({
       }
     })
   },
-  globalData: {
-    userInfo: null
+  /**
+   *  广告查询
+   *  @param adClmnId 广告栏id
+   *  @param o page对象
+   *  @param key 双向绑定变量名称
+   *  @param max 数据最大显示数量
+   **/
+  queryAd: function(adClmnId, o, key, max) {
+    wx.request({
+      url: this.globalData.reqPath + "/ad/queryAd.ajax",
+      dataType: "json",
+      type: "post",
+      cache: false,
+      data: {
+        "adClmnId": adClmnId
+      },
+      success: function (resp) {
+        if (!resp.data.isSuccess) {
+          return;
+        }
+        var json = JSON.parse(resp.data.data);
+        if(json.retCode == 0) {
+          var list = json.ads;
+          var k;
+          for (var i=0; i< list.length; i++) {
+            if( i+1 > max) {
+              break;
+            }
+            k = key;
+            if (max > 1) {
+              k = key + "["+i+"]";
+            }
+            o.setData({
+              [k]: {
+                id: list[i].adId,
+                name: list[i].adName,
+                pic: list[i].adPicUrl,
+                link: list[i].adUrl
+              }
+            });
+          }
+        }
+      }
+    });
   }
 })
