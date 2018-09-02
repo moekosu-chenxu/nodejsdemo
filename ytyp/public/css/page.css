@@ -1,0 +1,89 @@
+@charset "utf-8";
+.yellowfont{color:#ff912a;}
+.bg-white{background-color:#fff;}
+.bg-gray{background-color:#eee;}
+.indexbg {
+	background-color: #6a1ca4;
+	min-height:100%;
+	background-image:url(../../../images/activity/ytyp/bg.jpg); background-repeat:repeat-y; background-position:center top; background-size:100% auto;
+}
+.indexpic{width:100%; overflow:hidden; position:relative; text-align:center;margin:auto;}
+.indexpic img{width:100%; }
+.pagetitle{width:100%;background-image:url(../../../images/activity/ytyp/pagetitle_bg.png); background-repeat:no-repeat; background-position:center center; background-size:100% 100%; height:2rem; color:#fff45c; text-align:center; font-size:.7rem; overflow:hidden; line-height:2rem; margin:.5rem auto;}
+.pagetitle span{font-size:1rem;}
+.film_bottom{background-color:#fff; padding-bottom:0px;}
+.content{width:94.3%; overflow:hidden; margin:auto; }
+video::-webkit-media-controls-mute-button{display:none;}
+video::-webkit-media-controls-volume-slider{display:none;}
+video::-webkit-media-controls-time-remaining-display{display:none;}
+.video-intro{position:relative; width:100%;}
+.video-intro-title{width:100%; background-image:url(../../../images/activity/ytyp/title_bg.png); background-repeat:no-repeat; background-position:center top; background-size:100% 120%; color:#fff; font-size:.9rem; padding:12px 0 8px; display:flex; display:-webkit-flex;justify-content:space-around;-webkit-justify-content: space-around; align-items:center;margin-top:-.3rem;}
+.video-intro-title span{padding:0 8px; line-height:30px; color:#fff45c; text-decoration:underline;background: url("../../../images/activity/ytyp/icon_click.png") no-repeat left center; background-size:auto 90%; text-indent:1.2rem;}
+.video-intro-title option{background-color: #e4007f;}
+.video-intro-content{width:80%; margin:.6rem auto; color:#434343; font-size:.9rem; height:2.5rem; display: -webkit-box;
+-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.video-intro-content-arrow{
+	background-image: url("../../../images/activity/ytyp/icon_arrow.png");
+	background-color:transparent;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	width:1rem;
+	height:.5rem;
+	margin:0 auto 1rem;
+}
+.video-intro-content-arrow-up{transform:rotate(180deg);-webkit-transform:rotate(180deg);}
+.video-intro-content-arrowheight{height:auto;-webkit-line-clamp:99;}
+select{    
+  border: solid 1px #fff;  
+  border-radius:20px;  
+  appearance: none;/*清除select下拉框默认样式*/    
+  -moz-appearance: none;    
+  -webkit-appearance: none;   
+  padding-left: 8px;/*为下拉小箭头留出一点位置，避免被文字覆盖*/  
+  background-image: url("../../../images/activity/ytyp/icon_arrow_select.png");/*自定义图片覆盖原有的下三角符号*/
+  background-color:transparent;
+  background-position:40px center;
+  background-repeat:no-repeat;
+  background-size:auto 20%;
+  width:60px;
+  height:30px;
+  color:#fff;
+  outline: none;
+}
+select::-ms-expand {    
+  display: none;/*清除IE默认下拉按钮，但是测试发现IE10以上有效，IE8，9默认下拉按钮仍旧存在*/
+}
+.video-intro-btn{color:#3429ba; font-size:.8rem; display:flex; display:-webkit-flex;justify-content:space-around;-webkit-justify-content: space-around; align-items:center; padding:8px 5px;}
+.video-intro-btn div{border:#3429ba solid 1px; border-radius:20px; padding:5px;}
+.video-intro-btn div span{font-weight:bold;}
+.recommend{color:#666; font-size:.8rem; font-weight:bold; text-align:center; overflow:hidden;}
+.recommend p{padding:.5rem 0;}
+.swiper-slide{margin-top:0;}
+.swiper-slide img{width:100%; border:0;}
+.swiper-pagination-bullet{background:#fff;}
+.swiper-pagination-bullet-active{background:#a59eff;}
+.swiper-container-horizontal>.swiper-pagination{bottom:2.5rem;}
+
+.benefit{color:#666; font-size:.8rem; text-align:center; overflow:hidden;display:flex; display:-webkit-flex;justify-content:space-between;-webkit-justify-content: space-between; align-items:center; margin-bottom:5rem;}
+.benefit .benefit-item{width:48%;}
+.benefit .benefit-item img{width:100%;}
+.benefit .benefit-item p{padding:.5rem; 0;}
+
+.bottombanner{width:100%;position:fixed; bottom:0; background-color:rgba(0,0,0,.2); z-index:99;}
+.bottombanner img{width:100%;}
+
+.favorite{width:100%;}
+.favorite img{width:100%;}
+
+/*弹框及分享*/
+
+body .layui-layer{background-color:transparent; box-shadow:none;}
+body .layui-layer .layui-layer-content{overflow:visible;}
+body .layui-layer-msg{background-color:rgba(255,255,255,.8); font-size:.28rem; border:#b1ced6 solid 1px; color:#3e4e03; border-radius:.1rem;}
+.msgbg{
+	width: 100%;
+}
+.hide{display: none;}
+#loadVideoFail{color: #fff;text-align: center;position: relative;top: 80px;}
+

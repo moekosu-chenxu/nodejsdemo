@@ -1,13 +1,112 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<link href="../../public/css/swiper.min.css"/>
+<link href="../../public/css/layer.css"/>
+<link href="../../public/css/main.css"/>
+<link href="../../public/css/page.css"/>
+<view>
+    <div class="indexpic">
+        <div><img src="{{filePath}}/top.png" /></div>
+    </div>
+
+    <div class="pagetitle">
+       	今日播放：<span id="videoTitle"></span>
+    </div>
+
+    <div class="content">
+    	<div class="indexpic">
+            <img src="{{filePath}}/film_border.png" />
+      </div>
+    </div>
+
+    <div class="content">
+    	<div id="loadVideoFail" class="hide">加载视频失败</div>
+    	<video id="video1" preload="auto" width="100%" 
+        poster="{{filePath}}/film.jpg" 
+        src="{{filePath}}/video.mp4" 
+    		controls="controls">
+      </video>
+    </div>
+
+    <div class="content film_bottom">
+    	<div class="indexpic">
+            <img src="{{filePath}}/film_border.png" />
+      </div>
+    </div>
+
+    <div class="layout video-intro">
+        <div class="video-intro-title">
+                <span id="videoAd" data-src="{{cctv.link}}" bindtap="goPage">{{cctv.name}}</span>
+                <select id="videoDefinition" name="">
+                    <option value="0">标清</option>
+                    <option value="1">高清</option>
+                </select>
+        </div>
+        <div class="content bg-white">
+            <p id="videoDesc" class="video-intro-content"></p>
+            <div class="video-intro-content-arrow"></div>
+        </div>
+        <div class="content video-intro-btn bg-gray">
+            <div id="tomorrowView">
+            	明日预告：<span id="tomorrowTitle"></span>
+            </div>
+            <div onClick="favorite();">
+            	收藏页面 每日观看
+            </div>
+        </div>
+    </div>
+
+    <!-- 精选推荐 -->
+    <div id="selectedDiv" class="hide">
+        <div class="indexpic">
+            <img src="{{filePath}}/title_recommend.jpg" />
+        </div>
+        <div class="content bg-white recommend">
+        	<div class="swiper-container">
+                <div class="swiper-wrapper" id="selectedAd">
+                    <div class="swiper-slide"><img src="" /><p></p></div>
+                    <div class="swiper-slide"><img src="" /><p></p></div>
+                    <div class="swiper-slide"><img src="" /><p></p></div>
+                </div>
+				        <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    </div>
+
+    <!-- 流量特惠 -->
+    <div id="flowDiv" class="hide">
+        <div class="indexpic">
+            <img src="{{filePath}}/title_benefit.jpg" />
+        </div>
+        <div class="content ;sadsadasdasdhite benefit" id="flowAd">
+        	  <div class="benefit-item"><img src="" /><p></p></div>
+            <div class="benefit-item"><img src="" /><p></p></div>
+        </div>
+    </div>
+
+    <!-- 底部下载广告 -->
+    <div class="bottombanner hide" id="downloadAd">
+    	  <img src="{{filePath}}/bottom_banner.png" />
+    </div>
+	
+    <!--收藏提示-->
+    <div class="msgbg" id="favorite" style="display:none;">
+        <div class="favorite">
+            <img src="{{filePath}}/favorite.png"/>
+        </div>
+    </div>
+
+    <div>
+    cctv: {{ad_cctv.name}}
+    </div>
+    selected: 
+    <div wx:for="{{ad_selected}}" wx:for-item="item">
+    {{item.name}}
+    </div>
+    flow:
+    <div wx:for="{{ad_flow}}" wx:for-item="item">
+    {{item.name}}
+    </div>
+    <div>
+    download: {{ad_download.name}}
+    </div>
+
 </view>
