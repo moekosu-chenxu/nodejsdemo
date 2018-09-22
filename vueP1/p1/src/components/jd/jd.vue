@@ -144,7 +144,11 @@
               <div class="top_right_ad_fixedAd1"></div>
               <div class="top_right_ad_fixedAd2"></div>
             </div>
-            <div id="top_right_ad_hello"></div>
+            <div id="top_right_ad_hello">
+              <div id="top_right_ad_hello_my"></div>
+              <div id="top_right_ad_hello_notice"></div>
+              <div id="top_right_ad_hello_type"></div>
+            </div>
           </div>
         </div>
         </div>
