@@ -1,3 +1,4 @@
+<script src="../../../../../../../temp/vipactivity1020/js/vipShare.js"></script>
 <template>
   <div id="jd">
     <div id="top_right_navi">
@@ -145,9 +146,42 @@
               <div class="top_right_ad_fixedAd2"></div>
             </div>
             <div id="top_right_ad_hello">
-              <div id="top_right_ad_hello_my"></div>
-              <div id="top_right_ad_hello_notice"></div>
-              <div id="top_right_ad_hello_type"></div>
+              <div id="top_right_ad_hello_my">
+                <div class="userInfo">
+                  <div class="logo"><img src="" /></div>
+                  <span>Hi~ 欢迎来到JD</span>
+                  <span><a>登陆</a><a>注册</a></span>
+                </div>
+                <div class="userFuli">
+                  <div class="button b1">新人福利</div>
+                  <div class="button b2">PLUS会员</div>
+                </div>
+              </div>
+              <div id="top_right_ad_hello_notice">
+                <div class="title">
+                  <div class="item item1 itemActive">促销</div>
+                  <div class="item">公告</div>
+                  <div class="more">更多</div>
+                </div>
+                <div class="list">
+                  <ul>
+                    <li>促销1</li>
+                    <li>促销2</li>
+                    <li>促销3</li>
+                    <li>促销4</li>
+                    <li>促销5</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="top_right_ad_hello_type">
+                <div class="title">
+                  <div class="t1 tactive">话费</div>
+                  <div class="t1">机票</div>
+                  <div class="t1">酒店</div>
+                  <div class="t1">游戏</div>
+                </div>
+                <div class="content"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -350,5 +384,94 @@ export default {
     height: 100%;width: 20%;
     float: left;
     border: 1px solid #ccc;
+  }
+  #top_right_ad_hello_my{
+    width: 100%; height: 30%;float: left;
+  }
+  #top_right_ad_hello_my .userInfo .logo{
+    width: 60px; height: 60px;
+    border: 1px solid #aaa;border-radius: 50px;overflow: hidden;
+    margin: 0 auto;
+    position: relative;top: -10px;
+  }
+  #top_right_ad_hello_my .userInfo .logo img{
+    width: 100%;height: 100%;
+  }
+  #top_right_ad_hello_my .userInfo span{
+    display: block;
+    text-align: center;
+    color: #aaa;font-size: 13px;
+  }
+  #top_right_ad_hello_my .userInfo a{
+    margin: 0 5px;cursor: pointer;
+    color: initial;
+  }
+  #top_right_ad_hello_my .userInfo a:hover{
+    color: red;
+  }
+  #top_right_ad_hello_my .userFuli{
+    text-align: center;
+    padding: 8px 25px 0 25px;
+  }
+  #top_right_ad_hello_my .userFuli .button{
+    width: 70px;height: 25px;line-height: 25px;
+    border: 1px solid #bbb;border-radius: 20px;
+    font-size: 13px;
+    float: left;
+  }
+  #top_right_ad_hello_my .userFuli .b1{
+    margin-right: 3px;
+    background-color: #fff;color: red;
+    border: 1px solid #ccc;
+  }
+  #top_right_ad_hello_my .userFuli .b2{
+    background-color: #aaa;
+    color: #fff;
+  }
+  #top_right_ad_hello_notice{
+    width: 100%; height: 35%;float: left;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  #top_right_ad_hello_notice .title{
+    width: 100%;height: 30px;padding-top: 10px;box-sizing: border-box;
+  }
+  #top_right_ad_hello_notice .title .item{
+    width: 30px; height: 20px;line-height: 20px;
+    text-align: center;font-size: 13px;
+    float: left;
+    padding: 0 10px;
+  }
+  #top_right_ad_hello_notice .title .item1{
+    border-right: 1px solid #ccc;
+  }
+  #top_right_ad_hello_notice .title .itemActive{
+    border-bottom: 2px solid red;
+  }
+  #top_right_ad_hello_notice .title .more{
+    width: 40px; height: 20px;line-height: 20px;
+    text-align: center;font-size: 13px;
+    float: right;
+  }
+  #top_right_ad_hello_notice .list{
+    width: 100%; height: calc(80% - 2px);
+  }
+  #top_right_ad_hello_notice .list li{
+    font-size: 13px;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+  #top_right_ad_hello_type{
+    width: 100%; height: 35%;float: left;
+  }
+  #top_right_ad_hello_type .t1{
+    width: 25%;height: 25px;line-height: 30px;
+    font-size: 13px;
+    float: left;
+  }
+  #top_right_ad_hello_type .tactive{
+    color: red;
+    border-bottom: 2px solid red;
   }
 </style>
