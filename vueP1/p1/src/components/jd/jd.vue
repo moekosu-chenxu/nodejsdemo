@@ -185,22 +185,35 @@
             </div>
           </div>
         </div>
+      </div>
+      <!-- 秒杀 -->
+      <div id="miaosha">
+        <div id="miaosha_logo">
+          <div id="time">
+            <div id="time1" class="time">23</div>
+            <div id="time2" class="time t2">59</div>
+            <div id="time3" class="time t2">59</div>
+          </div>
         </div>
-        <!-- 秒杀 -->
-        <div id="miaosha">
-          <div id="miaosha_logo"></div>
-          <div id="miaosha_list"></div>
-          <div id="miaosha_ad"></div>
+        <div id="miaosha_list">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="turn_left">&lt;</div>
+          <div class="turn_right">&gt;</div>
         </div>
-        <!-- 特别广告 -->
-        <div id="specialList">
-          <div id="rank" class="specialList"></div>
-          <div id="album" class="specialList"></div>
-          <div id="voucher" class="specialList"></div>
-          <div id="me" class="specialList"></div>
-          <div id="found" class="specialList"></div>
-          <div id="guang" class="specialList"></div>
-        </div>
+        <div id="miaosha_ad"></div>
+      </div>
+      <!-- 特别广告 -->
+      <div id="specialList">
+        <div id="rank" class="specialList"></div>
+        <div id="album" class="specialList sp2"></div>
+        <div id="voucher" class="specialList"></div>
+        <div id="me" class="specialList"></div>
+        <div id="found" class="specialList sp2"></div>
+        <div id="guang" class="specialList"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -254,6 +267,7 @@ export default {
     width: 190px;height: 480px;
     border-left: 1px solid  #ccc;
     border-right: 1px solid  #ccc;
+    border-bottom: 1px solid  #ccc;
     float: left;
     font-size: 13px;
   }
@@ -473,5 +487,71 @@ export default {
   #top_right_ad_hello_type .tactive{
     color: red;
     border-bottom: 2px solid red;
+  }
+  /* 秒杀区 */
+  #miaosha {
+    width: 100%;height: 275px;
+    margin-bottom: 60px;
+    border: 1px solid #ccc;
+  }
+  #miaosha #miaosha_logo{
+    height: 100%;width: 190px;float: left;
+    border-right: 1px solid #ccc;
+    position: relative;
+  }
+  #miaosha #miaosha_logo #time{
+    width: 70%;height: 50px;line-height: 50px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 15%;
+  }
+  #miaosha #miaosha_logo .time{
+    float: left;width: 30%;
+    font-size: 30px;
+  }
+  #miaosha #miaosha_logo .t2:before{
+    content: ':'
+  }
+  #miaosha #miaosha_list{
+    height: 100%;width: calc(82% - 192px);float: left;
+    position: relative;
+  }
+  #miaosha #miaosha_list .item{
+    width: calc(25% - 1px);height: 100%;
+    border-right: 1px solid #ccc;
+    float: left;
+  }
+  #miaosha #miaosha_list .turn_left{
+    width: 30px;height: 50px;
+    background-color: #dcdbdb;
+    position: absolute;
+    top: 40%;left: 0;
+    text-align: center;line-height: 50px;
+  }
+  #miaosha #miaosha_list .turn_right{
+    width: 30px;height: 50px;
+    background-color: #dcdbdb;
+    position: absolute;
+    top: 40%;right: 1px;
+    text-align: center;line-height: 50px;
+  }
+  #miaosha #miaosha_ad {
+    height: 100%;width: 18%;float: left;
+    border-left: 1px solid #ccc;
+  }
+  /* 广告区 */
+  #specialList {
+    width: 100%;height: auto;
+    margin-bottom: 60px;
+    overflow: hidden;
+  }
+  #specialList .specialList{
+    width: 30%;height: 300px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-bottom: 60px;
+  }
+  #specialList .sp2{
+    margin: 0 calc(5% - 3px);
   }
 </style>
